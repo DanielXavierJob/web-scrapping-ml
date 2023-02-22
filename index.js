@@ -47,7 +47,7 @@ const waitForGetPages =  getArg("--wait=") || 0;
 (async () => {
   // Configurações
   const cluster = await Cluster.launch({
-    concurrency: Cluster.CONCURRENCY_CONTEXT,
+    concurrency: Cluster.CONCURRENCY_PAGE,
     maxConcurrency: 2,
     monitor: true,
     puppeteerOptions: {
